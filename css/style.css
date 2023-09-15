@@ -14,7 +14,7 @@ html, body {
   font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: 400;
-  line-height: 1.5;
+  line-height: 2.5;
 }
 
 .btn-theme {
@@ -176,7 +176,7 @@ header .container .mainmenu .login {
 
 .line {
   display: none;
-  top: 75px;
+  top: 90px;
   left: 0;
 }
 @media (min-width: 1200px) {
@@ -184,6 +184,179 @@ header .container .mainmenu .login {
     display: flex;
     position: absolute;
   }
+}
+
+main {
+  display: block;
+}
+main .classroom {
+  display: block;
+}
+main .classroom h2 {
+  font-size: 45px;
+  font-weight: 700;
+  font-family: "DM sans", sans-serif;
+  padding-top: 130px;
+}
+main .classroom .date {
+  display: flex;
+  padding-bottom: 40px;
+}
+main .classroom .date p {
+  padding-right: 10px;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "DM sans", sans-serif;
+}
+main .classroom .date p img {
+  padding-right: 10px;
+}
+main .container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0px;
+}
+main .container .employee {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 20px;
+  width: 100%;
+  height: auto;
+  margin: 0px;
+}
+main .container .employee .work {
+  display: block;
+  justify-content: start;
+  padding-right: 140px;
+}
+main .container .employee .work img {
+  width: 100%;
+  height: auto;
+}
+main .container .employee .work p {
+  display: flex;
+  padding-top: 50px;
+  line-height: 2;
+}
+main .container .employee .articles {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+main .container .employee .articles .search {
+  margin-bottom: 40px;
+}
+main .container .employee .articles .search a {
+  padding: 24px 100px;
+  border-radius: 40px;
+  background-color: #f3f3f3;
+  border: none;
+}
+main .container .employee .articles .search a img {
+  padding-right: 8px;
+}
+main .container .employee .articles .search a span {
+  text-align: left;
+  color: #868686;
+}
+main .container .employee .articles .article-box {
+  width: 100%;
+  height: auto;
+  border: 1px solid #191919;
+  padding: 45px 40px;
+  margin-bottom: 40px;
+  line-height: normal;
+}
+main .container .employee .articles .article-box h2 {
+  font-size: 22px;
+  font-weight: 700;
+  font-family: "DM sans", sans-serif;
+}
+main .container .employee .articles .article-box h3 {
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "DM sans", sans-serif;
+}
+main .container .employee .articles .article-box p {
+  font-size: 14px;
+}
+main .container .employee .article-box2 {
+  width: 100%;
+  height: auto;
+  border: 1px solid #191919;
+  padding: 45px 40px;
+  line-height: normal;
+}
+main .container .employee .article-box2 h2 {
+  font-size: 22px;
+  font-weight: 700;
+  font-family: "DM sans", sans-serif;
+}
+main .container .employee .article-box2 p {
+  font-size: 14px;
+}
+main .container .employee .article-box2 p b {
+  font-size: 16px;
+  font-family: "DM sans" sans-serif;
+  font-weight: 700;
+}
+main .coma {
+  display: block;
+  justify-content: start;
+  padding-bottom: 70px;
+  padding-top: 70px;
+  width: 50%;
+}
+main .coma h2 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  padding-left: 50px;
+  font-size: 22px;
+  padding-bottom: 80px;
+}
+main .coma p {
+  font-size: 16px;
+  padding-bottom: 35px;
+}
+main .coma .buttons {
+  display: flex;
+  justify-content: space-between;
+}
+main .coma .buttons .btn-theme {
+  padding: 11px 25px;
+  border-radius: 30px;
+  background-color: #f3f3f3;
+  border: none;
+  color: #191919;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.new-section {
+  background-color: #F0EFE9;
+  padding: 16px;
+  width: 100%;
+}
+.new-section .container {
+  display: block;
+  justify-content: center;
+}
+.new-section .news-Article {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.new-section .news-Article .title {
+  display: block;
+}
+.new-section .new-image {
+  display: flex;
+  justify-content: right;
+  gap: 30px;
 }
 
 .footer {

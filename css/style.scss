@@ -16,7 +16,7 @@ html, body{
    font-family: 'Inter', sans-serif;
    font-size: 16px;
    font-weight: 400;
-   line-height: 1.5;
+   line-height: 2.5;
 
  
   
@@ -215,12 +215,235 @@ header{
     }
     .line{
         display: none;
-        top: 75px;
+        top: 90px;
         left:0;
 
         @media(min-width: 1200px){
             display: flex;
             position:absolute;
+        }
+    }
+
+    main{
+        display: block;
+
+        .classroom{
+            display: block;
+           
+
+            h2{
+                font-size: 45px;
+                font-weight: 700;
+                font-family: 'DM sans', sans-serif;
+                padding-top: 130px;
+            }
+
+
+           .date{
+                display: flex;
+                padding-bottom: 40px;
+            
+            p{
+                padding-right: 10px;
+                font-size: 20px;
+                font-weight: 400;
+                font-family: 'DM sans', sans-serif;
+                img{
+                    padding-right: 10px;
+                }
+            }
+            
+           }
+        }
+
+        .container{
+            display: flex; 
+            justify-content: space-between;
+            width: 100%;
+            height: auto;
+            padding: 0; 
+            margin: 0px;  
+                
+           
+
+            .employee{
+                display: flex;
+                justify-content: space-between;
+                margin-right: 20px;
+                width: 100%;
+                height: auto;
+                margin: 0px;
+                
+                
+
+
+                .work{
+                  display: block;
+                  justify-content: start;
+                  padding-right: 140px;
+                  
+                  img{
+                    width: 100%;
+                    height: auto;
+                  }
+
+                  p{
+                   display: flex;
+                   padding-top: 50px;
+                   line-height: 2;
+                  }
+                } 
+
+
+                .articles{
+                  display: block;
+                  width: 100%;
+                  height: auto;
+
+                  .search{
+                       
+                        margin-bottom: 40px;
+                        a{
+                            padding: 24px 100px;
+                            border-radius: 40px;
+                            background-color: #f3f3f3;
+                            border: none;
+                            // text-align: left;
+
+                            img{
+                              padding-right: 8px;
+                            
+                            
+                            }
+                                            
+                            span{
+                              
+                                text-align: left;
+                                color: #868686;
+                               
+                            }
+                            
+                        }
+                  
+                    
+                    }
+                
+            
+                  .article-box{
+                    width:100%;
+                    height: auto;
+                    border: 1px solid #191919;
+                    padding: 45px 40px;
+                    margin-bottom: 40px;
+                    line-height: normal;
+                    h2{
+                        font-size: 22px;
+                        font-weight: 700;
+                        font-family: 'DM sans', sans-serif;
+                    }
+
+                    h3{
+                        font-size: 16px;
+                        font-weight: 700;
+                        font-family: 'DM sans', sans-serif;
+                    }
+                    p{
+                        font-size: 14px;
+
+                    }
+                  }
+                }
+                .article-box2{
+                    width: 100%;
+                    height: auto;
+                    border: 1px solid #191919;
+                    padding: 45px 40px;
+                    line-height: normal;
+
+                    h2{
+                        font-size: 22px;
+                        font-weight: 700;
+                        font-family: 'DM sans', sans-serif;
+                    }
+                    p{
+                        font-size: 14px;
+
+                        b{
+                            font-size: 16px;
+                            font-family: 'DM sans'sans-serif;
+                            font-weight: 700;
+                        }
+
+                    }
+                  }
+            }
+        }
+        .coma{
+            display: block;
+            justify-content: start;
+            padding-bottom: 70px;
+            padding-top: 70px;
+            width: 50%;
+            h2{
+                font-family: 'DM Sans', sans-serif;
+                font-weight: 500;
+                padding-left: 50px;
+                font-size: 22px;
+                padding-bottom: 80px;
+            }
+            p{
+                font-size: 16px;
+                padding-bottom: 35px;
+            }
+            .buttons{
+                display: flex;
+                justify-content: space-between;
+
+
+                    .btn-theme{
+                        padding: 11px 25px;
+                        border-radius: 30px;
+                        background-color: #f3f3f3;
+                        border: none;
+                        color: #191919;
+                        font-size: 14px;
+                        font-weight: 500;
+                    }
+                    
+                
+                
+            }
+        }
+       
+     
+    } 
+    
+.new-section{
+        
+        background-color:#F0EFE9;
+        padding: 16px;
+        width: 100%;
+
+       .container{
+            display: block;
+            justify-content: center;
+    
+       }
+
+        .news-Article{
+            display: flex;
+            justify-content: space-between;
+            padding-top: 40px;
+            padding-bottom: 40px;
+
+            .title{
+                display: block;
+            }
+        }
+        .new-image{
+            display: flex;
+            justify-content: right;
+            gap: 30px;
         }
     }
 
