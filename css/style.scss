@@ -581,9 +581,11 @@ article{
                         img{
                             width: 100%;
                             height: auto;
-
-
+                        
                         }
+
+
+                                       
                         .item{
                             line-height: 1.8;
 
@@ -632,7 +634,7 @@ article{
                display:grid;
                grid-template-columns: repeat(2, 1fr);
                column-gap: 20px;
-               padding-left: 30px;
+               padding-top: 50px;
                
               
 
@@ -770,14 +772,13 @@ article{
             .subfoot{
                 display:flex;
                 justify-content: space-between;
+                align-items: center;
                 color: white;
-                padding: 10;
+                padding: 20px;
+                 
                 @media(min-width:992px){
-                    display:flex;
-                    justify-content: space-between;
                     padding: 0px;
                 }
-
                
                 .foot-socialmedia{
                     display: none;             

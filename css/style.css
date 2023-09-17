@@ -513,7 +513,7 @@ article .container .dot {
   grid-template-columns: repeat(2, 1fr);
   -moz-column-gap: 20px;
        column-gap: 20px;
-  padding-left: 30px;
+  padding-top: 50px;
 }
 @media (min-width: 992px) {
   .footer .container {
@@ -607,13 +607,12 @@ article .container .dot {
 .footer .subfoot {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   color: white;
-  padding: 10;
+  padding: 20px;
 }
 @media (min-width: 992px) {
   .footer .subfoot {
-    display: flex;
-    justify-content: space-between;
     padding: 0px;
   }
 }
