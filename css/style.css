@@ -14,7 +14,7 @@ html, body {
   font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: 400;
-  line-height: 2.5;
+  line-height: 1.5;
 }
 
 .btn-theme {
@@ -191,16 +191,35 @@ main {
 }
 main .classroom {
   display: block;
+  text-align: center;
+}
+@media (min-width: 1200px) {
+  main .classroom {
+    display: block;
+    text-align: left;
+  }
 }
 main .classroom h2 {
   font-size: 45px;
   font-weight: 700;
   font-family: "DM sans", sans-serif;
-  padding-top: 130px;
+  padding-top: 50px;
+}
+@media (min-width: 1200px) {
+  main .classroom h2 {
+    padding-top: 130px;
+  }
 }
 main .classroom .date {
   display: flex;
+  justify-content: center;
   padding-bottom: 40px;
+}
+@media (min-width: 1200px) {
+  main .classroom .date {
+    display: flex;
+    justify-content: left;
+  }
 }
 main .classroom .date p {
   padding-right: 10px;
@@ -212,25 +231,41 @@ main .classroom .date p img {
   padding-right: 10px;
 }
 main .container {
-  display: flex;
-  justify-content: space-between;
+  display: block;
+  justify-content: center;
   width: 100%;
   height: auto;
   padding: 0;
   margin: 0px;
 }
+@media (min-width: 1200px) {
+  main .container {
+    display: flex;
+  }
+}
 main .container .employee {
-  display: flex;
-  justify-content: space-between;
-  margin-right: 20px;
+  display: block;
+  justify-content: center;
   width: 100%;
   height: auto;
-  margin: 0px;
+}
+@media (min-width: 992px) {
+  main .container .employee {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
+    margin: 0px;
+  }
 }
 main .container .employee .work {
   display: block;
   justify-content: start;
-  padding-right: 140px;
+  padding-right: 14px;
+}
+@media (min-width: 992px) {
+  main .container .employee .work {
+    padding-right: 140px;
+  }
 }
 main .container .employee .work img {
   width: 100%;
@@ -247,7 +282,14 @@ main .container .employee .articles {
   height: auto;
 }
 main .container .employee .articles .search {
+  display: flex;
+  justify-content: center;
   margin-bottom: 40px;
+}
+@media (min-width: 992) {
+  main .container .employee .articles .search {
+    justify-content: left;
+  }
 }
 main .container .employee .articles .search a {
   padding: 24px 100px;
@@ -263,6 +305,8 @@ main .container .employee .articles .search a span {
   color: #868686;
 }
 main .container .employee .articles .article-box {
+  display: block;
+  justify-content: left;
   width: 100%;
   height: auto;
   border: 1px solid #191919;
@@ -294,6 +338,7 @@ main .container .employee .article-box2 h2 {
   font-size: 22px;
   font-weight: 700;
   font-family: "DM sans", sans-serif;
+  text-align: center;
 }
 main .container .employee .article-box2 p {
   font-size: 14px;
@@ -305,58 +350,159 @@ main .container .employee .article-box2 p b {
 }
 main .coma {
   display: block;
-  justify-content: start;
-  padding-bottom: 70px;
-  padding-top: 70px;
-  width: 50%;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding-top: 30px;
+}
+@media (min-width: 992px) {
+  main .coma {
+    width: 65%;
+    text-align: left;
+    padding-bottom: 70px;
+    padding-top: 70px;
+  }
 }
 main .coma h2 {
   font-family: "DM Sans", sans-serif;
   font-weight: 500;
-  padding-left: 50px;
+  padding: 10px;
   font-size: 22px;
   padding-bottom: 80px;
 }
+@media (min-width: 992px) {
+  main .coma h2 {
+    padding-left: 50px;
+  }
+}
 main .coma p {
   font-size: 16px;
-  padding-bottom: 35px;
 }
 main .coma .buttons {
-  display: flex;
-  justify-content: space-between;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+}
+@media (min-width: 992px) {
+  main .coma .buttons {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+  }
 }
 main .coma .buttons .btn-theme {
-  padding: 11px 25px;
+  padding: 16px 35px;
   border-radius: 30px;
   background-color: #f3f3f3;
   border: none;
   color: #191919;
   font-size: 14px;
   font-weight: 500;
+  margin-bottom: 20px;
 }
 
-.new-section {
+article {
   background-color: #F0EFE9;
   padding: 16px;
-  width: 100%;
 }
-.new-section .container {
+article .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+}
+article .container .news-article {
+  display: block;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+@media (min-width: 992px) {
+  article .container .news-article {
+    display: flex;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+article .container .news-article .title {
   display: block;
   justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 30px;
 }
-.new-section .news-Article {
+@media (min-width: 992px) {
+  article .container .news-article .title {
+    display: block;
+  }
+}
+article .container .news-article a {
   display: flex;
-  justify-content: space-between;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  justify-content: center;
+  background-color: #ffffff;
+  color: #5c5c5c;
+  border: #191919;
+  border: 1px solid;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px 15px;
+  margin-top: 20px;
 }
-.new-section .news-Article .title {
+@media (min-width: 992px) {
+  article .container .news-article a {
+    padding: 16px 55px;
+  }
+}
+article .container .new-image {
   display: block;
-}
-.new-section .new-image {
-  display: flex;
-  justify-content: right;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
   gap: 30px;
+}
+@media (min-width: 992px) {
+  article .container .new-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+article .container .new-image .items {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+article .container .new-image .items img {
+  width: 100%;
+  height: auto;
+}
+article .container .new-image .items .item {
+  line-height: 1.8;
+}
+article .container .new-image .items .item h2 {
+  font-size: 22px;
+  font-family: "DM sans", sans-serif;
+  font-weight: 700;
+}
+article .container .dot {
+  display: none;
+}
+@media (min-width: 992px) {
+  article .container .dot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
 }
 
 .footer {
