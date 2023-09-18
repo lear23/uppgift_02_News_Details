@@ -160,8 +160,12 @@ header .container .mainmenu .login {
   position: relative;
   background-color: #F0EFE9;
   padding: 16px;
-  padding-top: 100px;
-  padding-bottom: 90px;
+}
+@media (min-width: 990px) {
+  .subheader {
+    padding-top: 100px;
+    padding-bottom: 90px;
+  }
 }
 .subheader a {
   text-decoration: none;
@@ -213,19 +217,24 @@ main .classroom h2 {
 main .classroom .date {
   display: flex;
   justify-content: center;
-  padding-bottom: 40px;
 }
 @media (min-width: 1200px) {
   main .classroom .date {
     display: flex;
     justify-content: left;
+    padding-bottom: 40px;
   }
 }
 main .classroom .date p {
   padding-right: 10px;
-  font-size: 20px;
+  font-size: 10px;
   font-weight: 400;
   font-family: "DM sans", sans-serif;
+}
+@media (min-width: 920px) {
+  main .classroom .date p {
+    font-size: 20px;
+  }
 }
 main .classroom .date p img {
   padding-right: 10px;
@@ -278,30 +287,30 @@ main .container .employee .work p {
 }
 main .container .employee .articles {
   display: block;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: auto;
 }
 main .container .employee .articles .search {
-  display: flex;
-  justify-content: center;
+  background-color: #f3f3f3;
+  display: inline-block;
+  align-items: center;
+  border-radius: 25px;
   margin-bottom: 40px;
+  width: 100%;
+  padding: 12px;
 }
-@media (min-width: 992) {
+@media (min-width: 992px) {
   main .container .employee .articles .search {
-    justify-content: left;
+    display: flex;
+    padding: 8px 18px;
   }
 }
-main .container .employee .articles .search a {
-  padding: 24px 100px;
-  border-radius: 40px;
-  background-color: #f3f3f3;
+main .container .employee .articles .search input {
+  background-color: transparent;
   border: none;
-}
-main .container .employee .articles .search a img {
-  padding-right: 8px;
-}
-main .container .employee .articles .search a span {
-  text-align: left;
+  outline: none;
   color: #868686;
 }
 main .container .employee .articles .article-box {
@@ -507,6 +516,7 @@ article .container .dot {
 
 .footer {
   background-color: #191919;
+  position: relative;
 }
 .footer .container {
   display: grid;
@@ -600,6 +610,17 @@ article .container .dot {
 .footer .container .link-5 ul a {
   color: #b6b6bc;
   text-decoration: none;
+}
+.footer .container .line-footer {
+  display: none;
+  position: absolute;
+  bottom: 60px;
+  right: 5px;
+}
+@media (min-width: 992px) {
+  .footer .container .line-footer {
+    display: flex;
+  }
 }
 .footer hr {
   color: #707070;
