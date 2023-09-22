@@ -268,11 +268,13 @@ main .container .employee {
 }
 main .container .employee .work {
   display: block;
-  justify-content: start;
-  padding-right: 14px;
+  justify-content: center;
+  text-align: center;
 }
 @media (min-width: 992px) {
   main .container .employee .work {
+    display: block;
+    justify-content: start;
     padding-right: 140px;
   }
 }
@@ -323,6 +325,11 @@ main .container .employee .articles .article-box {
   margin-bottom: 40px;
   line-height: normal;
 }
+@media (min-width: 992px) {
+  main .container .employee .articles .article-box {
+    text-align: left;
+  }
+}
 main .container .employee .articles .article-box h2 {
   font-size: 22px;
   font-weight: 700;
@@ -337,11 +344,23 @@ main .container .employee .articles .article-box p {
   font-size: 14px;
 }
 main .container .employee .article-box2 {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   width: 100%;
   height: auto;
   border: 1px solid #191919;
   padding: 45px 40px;
   line-height: normal;
+}
+@media (min-width: 990px) {
+  main .container .employee .article-box2 {
+    display: block;
+    justify-content: start;
+    align-items: center;
+    text-align: left;
+  }
 }
 main .container .employee .article-box2 h2 {
   font-size: 22px;

@@ -316,10 +316,13 @@ header{
 
                 .work{
                   display: block;
-                  justify-content: start;
-                  padding-right: 14px;
+                  justify-content: center;
+                  text-align: center;
+                //   padding-right: 14px;
 
                   @media(min-width:992px){
+                    display: block;
+                    justify-content: start;
                     padding-right: 140px;
                   }
                   
@@ -373,40 +376,7 @@ header{
                     }
                   }
 
-                //   .search{
-                //        display: flex;
-                //        justify-content: center;
-                //         margin-bottom: 40px;
-
-                //         @media(min-width:992){
-                //             justify-content: left;
-                //         }
-
-
-                //         a{
-                //             padding: 24px 100px;
-                //             border-radius: 40px;
-                //             background-color: #f3f3f3;
-                //             border: none;
-                            
-
-                //             img{
-                //               padding-right: 8px;
-                            
-                            
-                //             }
-                                            
-                //             span{
-                              
-                //                 text-align: left;
-                //                 color: #868686;
-                               
-                //             }
-                            
-                //         }
-                  
-                    
-                //     }
+                                       
                 
             
                   .article-box{
@@ -418,9 +388,10 @@ header{
                     padding: 45px 40px;
                     margin-bottom: 40px;
                     line-height: normal;
-                    // @media(min-width:992px){
-                    //     justify-content: center;
-                    // }
+
+                    @media(min-width:992px){
+                       text-align: left;
+                    }
 
 
                     h2{
@@ -441,12 +412,23 @@ header{
                   }
                 }
                 .article-box2{
-            
+                    display: block;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
                     width: 100%;
                     height: auto;
                     border: 1px solid #191919;
                     padding: 45px 40px;
                     line-height: normal;
+
+                    @media (min-width:990px) {
+                        display: block;
+                        justify-content: start;
+                        align-items: center;
+                        text-align:left;
+                        
+                    }
 
                    
 
