@@ -250,6 +250,7 @@ main .container {
 @media (min-width: 1200px) {
   main .container {
     display: flex;
+    justify-content: center;
   }
 }
 main .container .employee {
